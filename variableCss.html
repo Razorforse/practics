@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cssVariable</title>
+	<style>
+		:root {
+			--main-color:#E7B233;
+			--text-color:#180000;
+			--butt-color:#E5FE0E;
+			--light-text:14px;
+			--medium-text:28px;
+			--big-text:36px;
+		}
+		html,body,.root {
+			margin: 0;
+			padding: 0;
+			color: var(--text-color);
+			font-size: var(--medium-text);
+
+		}
+		.root {
+			background-color: #fff;
+			display: flex;
+			justify-content: center;
+		}
+
+		.statebar {
+			width: 80%;
+			height: 150px;
+			margin: 30px;
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-start;
+			background-color: var(--butt-color);
+			-webkit-box-shadow: -11px 13px 0px 8px #000000; 
+			box-shadow: -11px 13px 0px 8px #000000;
+		}
+
+		.state {
+			margin: 0;
+			padding: 10px;
+			list-style-type: none;
+			display: flex;
+		}
+
+		.state__elem {
+			border: 4px dashed var(--text-color);
+			background-color: #fff;
+			margin: 20px;
+		}
+
+		.state__link {
+			text-decoration: none;
+			color: var(--text-color);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="root">
+		<div class="statebar">
+			<ul class="state">
+				<li class="state__elem">
+					<a href="#" class="state__link">Изменить цвет текста</a>
+				</li>
+				<li class="state__elem">
+					<a href="#" class="state__link">Изменить цвет фона</a>
+				</li>
+				<li class="state__elem">
+					<a href="#" class="state__link">Изменить всё</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
