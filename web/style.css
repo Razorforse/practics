@@ -1,0 +1,17 @@
+.container {
+	position: relative;
+	width: 800px;
+	height: 800px;
+	background-color: green;
+	border: 5px solid #000;
+}
+
+#ball {
+	transition-property: top,left;
+	transition-duration: 1.5s;
+	height: 80px;
+	width: 80px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
